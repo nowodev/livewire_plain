@@ -3,6 +3,8 @@
 @section('content')
   <h2>Livewire One</h2>
 
+  @livewire('search')
+  
   <livewire:first-component />
 
   <livewire:second />
