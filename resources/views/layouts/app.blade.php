@@ -14,6 +14,12 @@
   <h1 class="text-4xl text-white ml-6">Livewire</h1>
 </header>
 <main class="flex-grow p-4 bg-blue-100">
+  @if (session()->has('message'))
+    <div class="flex items-center bg-blue-500 text-white text-sm font-bold px-4 py-3" role="alert">
+      <p>{{ session('message') }}</p>
+    </div>
+  @endif
+
   @yield('content')
 </main>
 <footer class="bg-red-600 h-10">

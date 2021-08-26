@@ -16,4 +16,10 @@ class Child extends Component
     {
         return view('livewire.child');
     }
+
+    public function goToHomePage()
+    {
+        session()->flash('message', 'Redirected Successfuly');
+        return redirect()->to('livewire');
+    }
 }
