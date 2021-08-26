@@ -26,5 +26,11 @@
   <h1 class="text-center text-white">Footer</h1>
 </footer>
 
+<script>
+  Livewire.on('searchBtnWasClicked', count => {
+    alert('Search Button was clicked whcih incremented the counter by ' + count);
+  });
+</script>
+
 </body>
 </html>
