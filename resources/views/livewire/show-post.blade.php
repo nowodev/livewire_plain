@@ -4,4 +4,6 @@
     <p class="mt-2 p-2 text-blue-300">{{ $post->body }}</p>
 
     Total Posts: <span class="font-black">{{ $this->total_posts }}</span>
+
+    <livewire:child :text="$post->title" />
 </div>
