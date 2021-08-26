@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\ShowPost;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('livewire', function () {
     return view('livewire-one');
 });
+
+Route::get('post/{post}', ShowPost::class);
