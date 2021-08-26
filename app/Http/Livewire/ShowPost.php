@@ -18,4 +18,9 @@ class ShowPost extends Component
     {
         return view('livewire.show-post')->extends('layouts.app');
     }
+
+    public function getTotalPostsProperty()
+    {
+        return Post::count();
+    }
 }
